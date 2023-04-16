@@ -50,8 +50,17 @@ main {
 }
 
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
     background-color: #DDE5BE;
     height: 100px;
+}
+
+footer a {
+    padding: 10px;
+   margin: 10px;
 }
 
 .redes {
@@ -111,6 +120,12 @@ footer {
 }
 
 /*albums*/
+
+.mainAlbums {
+    display: flex;
+    padding: 20px;
+    justify-content: space-evenly;
+}
 
 /*colaboraciones*/
 
