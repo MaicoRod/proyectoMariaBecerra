@@ -64,7 +64,7 @@ footer {
 
 footer a {
     padding: 10px;
-   margin: 10px;
+    margin: 10px;
 }
 
 .redes:hover {
@@ -121,6 +121,25 @@ footer a {
         position: absolute;
     }
 
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 320px){
+    .logo {
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+        left: 5px;
+        position: absolute;
+    }
+    
+    .h2nav{
+        display: none;
+    }
 }
 
 /*index*/
@@ -202,12 +221,100 @@ footer a {
 
 }
 
+@media (max-width: 320px){
+    nav .fa-solid {
+        display: block;
+        font-size: 20px;
+        margin: 15px;
+        color: #73141B;
+    } 
+    
+    nav {
+        background-color: #DDE5BE;
+        height: 50px;
+        width: 100%;
+    }
+
+    nav ul li {
+        flex-direction: column;
+        position: absolute;
+        background-color: #DDE5BE;
+        width: 250px;
+        height: 100px;
+        padding-top: 60px;
+        align-items: center;
+        right: -300px;
+        transition: 0.2s;
+    }
+
+    nav .fa-solid:hover + ul li {
+        right: 0;
+    }
+
+    nav ul:hover {
+        right: 0;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+    }
+
+    .imgIndex {
+        width: 300px;
+        height: 300px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    footer {
+        height: 200px;
+        justify-content: center;
+    }
+
+}
+
 /*albums*/
 
 .mainAlbums {
     display: flex;
     padding: 20px;
+    margin: auto;
     justify-content: space-evenly;
+}
+
+.h1Albums {
+    text-align: center;
+    background-color: #DEB299;
+}
+
+.card {
+    width: 20rem;
+ }
+
+@media (max-width: 780px){
+    .mainAlbums {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 600px;
+     }
+}
+
+@media (max-width: 320px){
+    .card {
+        width: 300px;
+    }
 }
 
 /*colaboraciones*/
