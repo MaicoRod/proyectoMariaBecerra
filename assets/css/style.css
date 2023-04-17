@@ -32,6 +32,10 @@ ul li a {
     color: #73141B;
 }
 
+a:hover {
+    color: black;
+}
+
 nav .fa-solid {
     display: none;
 }
@@ -42,7 +46,7 @@ h1 {
 
 p {
     font-family: 'Roboto', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 main {
@@ -61,6 +65,10 @@ footer {
 footer a {
     padding: 10px;
    margin: 10px;
+}
+
+.redes:hover {
+    color: black;
 }
 
 .redes {
