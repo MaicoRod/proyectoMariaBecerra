@@ -83,6 +83,46 @@ footer a {
     position: absolute;
 }
 
+@media (max-width: 768px){
+   
+    nav .fa-solid {
+        display: block;
+        font-size: 30px;
+        margin: 15px;
+        color: #73141B;
+    } 
+    
+    nav {
+        background-color: #DDE5BE;
+        height: 60px;
+    }
+
+    nav ul li {
+        flex-direction: column;
+        position: absolute;
+        background-color: #DDE5BE;
+        width: 250px;
+        height: 100px;
+        padding-top: 60px;
+        align-items: center;
+        right: -250px;
+        transition: 0.2s;
+    }
+
+    nav .fa-solid:hover + ul li {
+        right: 0;
+    }
+
+    nav ul:hover {
+        right: 0;
+    }
+
+    .logo {
+        position: absolute;
+    }
+
+}
+
 /*index*/
 
 .logo {
@@ -125,6 +165,41 @@ footer a {
 
 .gridIindex {
     grid-area: img;
+}
+
+@media (max-width: 768px){
+
+    .portada {
+        width: 400px;
+        height: 200px;
+    }
+
+    .gridIndex {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "h1 h1 h1"
+        "img img img"
+        "p p p";
+    }
+
+    .gridH1 {
+        margin: auto;
+        padding: 20px;
+    }
+    
+    .gridPindex {
+        grid-area: p;
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    
+    .gridIindex {
+        grid-area: img;
+        margin: auto;
+    }
+
 }
 
 /*albums*/
