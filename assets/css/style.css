@@ -370,3 +370,38 @@ fieldset {
     text-align: center;
 }
 
+@media (max-width: 320px) {
+    
+    .h1Contacto {
+        padding-top: 0;
+    }
+
+    .pContacto {
+        padding: 0;
+    }
+    
+    .formulario {
+        width: 250px;
+        height:500px;
+        margin: 0;
+        padding: 0;
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        color: #73141B;
+        padding: 0;
+        margin: 10px;
+    }
+
+    textarea {
+        width: 300px;
+        height: 100px;
+    }
+
+    .tya {
+        padding: 5px;
+    }
+}
