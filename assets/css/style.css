@@ -333,7 +333,40 @@ footer a {
 }
 
 /*contacto*/
+
+.h1Contacto {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.pContacto{
+    text-align: center;
+    padding-top: 20px;
+}
+
 .fuenteContacto {
     font-family: "Prompt";
     font-size: 15px;
+    color: black;
 }
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: solid 3px;
+    color: #73141B;
+    padding: 20px;
+}
+
+.formulario {
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    padding: 50px;
+}
+
+.tya {
+    padding: 10px;
+    text-align: center;
+}
+
