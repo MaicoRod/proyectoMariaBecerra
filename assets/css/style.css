@@ -41,7 +41,7 @@ nav .fa-solid {
 }
 
 h1 {
-    font-family: "Prompt"; 
+    font-family: "Prompt";
 }
 
 p {
@@ -83,15 +83,49 @@ footer a {
     position: absolute;
 }
 
-@media (max-width: 768px){
-   
+@media (max-width: 320px){
+
     nav .fa-solid {
         display: block;
         font-size: 30px;
         margin: 15px;
         color: #73141B;
-    } 
-    
+    }
+
+    nav ul{
+        flex-direction: column;
+        position: none;
+        background-color: #DDE5BE;
+        width: 200px;
+        height: 100vh;
+        padding-top: 60px;
+        align-items: center;
+        right: -250px;
+        transition: 0.2s;
+    }
+
+    .logo {
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+        left: 5px;
+        position: absolute;
+    }
+
+    .h2nav{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+
+    nav .fa-solid {
+        display: block;
+        font-size: 30px;
+        margin: 15px;
+        color: #73141B;
+    }
+
     nav ul{
         flex-direction: column;
         position: absolute;
@@ -131,7 +165,7 @@ footer a {
         left: 5px;
         position: absolute;
     }
-    
+
     .h2nav{
         display: none;
     }
@@ -155,7 +189,7 @@ footer a {
 .gridIndex {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
     "h1 h1 img"
     "p p img"
     "p p img";
@@ -191,7 +225,7 @@ footer a {
     .gridIndex {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: 
+        grid-template-areas:
         "h1 h1 h1"
         "img img img"
         "p p p";
@@ -201,14 +235,14 @@ footer a {
         margin: auto;
         padding: 20px;
     }
-    
+
     .gridPindex {
         grid-area: p;
         margin: 10px;
         padding: 10px;
     }
-    
-    
+
+
     .gridIindex {
         grid-area: img;
         margin: auto;
@@ -222,8 +256,8 @@ footer a {
         font-size: 20px;
         margin: 15px;
         color: #73141B;
-    } 
-    
+    }
+
     nav {
         background-color: #DDE5BE;
         height: 50px;
@@ -260,7 +294,7 @@ footer a {
         width: 300px;
         height: 300px;
     }
-    
+
     h1 {
         font-size: 20px;
     }
@@ -313,10 +347,17 @@ footer a {
 }
 
 /*colaboraciones*/
-
+.h2Col {
+    color: #73141B;
+    text-decoration: underline;
+}
+.imgCol {
+    width: 800px;
+    height: 800px;
+}
 .collage {
     width: 100%;
-    height: 500px;
+    height: 600px;
 }
 
 
@@ -366,7 +407,7 @@ fieldset {
 }
 
 @media (max-width: 320px) {
-    
+
     .h1Contacto {
         padding-top: 0;
     }
@@ -374,7 +415,7 @@ fieldset {
     .pContacto {
         padding: 0;
     }
-    
+
     .formulario {
         width: 250px;
         height:500px;
