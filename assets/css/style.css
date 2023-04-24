@@ -134,7 +134,7 @@ footer a {
         height: 100%;
         padding-top: 60px;
         align-items: center;
-        right: -190px;
+        top: -500px;
         transition: 0.2s;
     }
 
@@ -143,11 +143,11 @@ footer a {
     }
 
     nav .fa-solid:hover + ul{
-        right: 0;
+        top: 0;
     }
 
     nav ul:hover {
-        right: 0;
+        top: 0;
     }
 
     .logo {
