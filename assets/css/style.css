@@ -118,7 +118,7 @@ footer a {
 }
 
 @media (max-width: 768px){
-
+   
     nav .fa-solid {
         display: block;
         font-size: 30px;
@@ -127,15 +127,19 @@ footer a {
     }
 
     nav ul{
-        flex-direction: column;
         position: absolute;
+        flex-direction: column;
         background-color: #DDE5BE;
-        width: 200px;
-        height: 100vh;
+        width: 25%;
+        height: 100%;
         padding-top: 60px;
         align-items: center;
-        right: -250px;
+        right: -190px;
         transition: 0.2s;
+    }
+
+    nav ul li a {
+        font-size: 15px;
     }
 
     nav .fa-solid:hover + ul{
